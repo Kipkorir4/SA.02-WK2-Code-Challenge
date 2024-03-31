@@ -1,6 +1,6 @@
 // defining the main function 
 const caseSwapper = (inputString) => {
-    // creating an empty variable for the new swapped string to be 'stored' in
+    // creating an empty variable for the new swapped string to be stored in
     let swappedString = "";
     // starting a for loop that iterates over each character of the input string
     for (let i = 0; i < inputString.length; i++) {

@@ -1,19 +1,19 @@
 // defining the main function
 const isPrime = (num) => {
-    // Prime numbers are greater than 1
+    // prime numbers are greater than 1, thus, 
     if (num <= 1) return false;
 
-    // Checking if num is divisible by any number from 2 to its square root
+    // checking if num is divisible by any number from 2 to its square root
     for (var i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) {
-            return false; // If num is divisible by any number, it's not prime
+            return false; // if num is divisible by any number, it's not prime
         }
     }
-    return true; // If num is not divisible by any number, it's prime
+    return true; // if num is not divisible by any number, it's prime
 }
 
 function filterPrimes(numbers) {
-    // Filter the input array to get only prime numbers
+    // filtering the input array to get only prime numbers
     return numbers.filter(num => isPrime(num));
 }
 
