@@ -4,7 +4,7 @@ const isPrime = (num) => {
     if (num <= 1) return false;
 
     // checking if num is divisible by any number from 2 to its square root
-    for (var i = 2; i <= Math.sqrt(num); i++) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) {
             return false; // if num is divisible by any number, it's not prime
         }
